@@ -1,6 +1,6 @@
-package Fundamentos.Programa01;
+package Exercicios.HelloWorld;
 
-public class Main {
+public class index {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
