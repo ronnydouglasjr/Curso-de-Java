@@ -8,9 +8,19 @@ public class index {
 
         int N = entrada.nextInt();
 
-        for (int i = 1; i <= 10; i++) {
-            int resultado = i * N;
-            System.out.printf("%d x %d = %d\n", i, N, resultado);
+        for (int i = 0; i < N; i++) {
+
+            double valor1 = entrada.nextDouble();
+            double valor2 = entrada.nextDouble();
+            double valor3 = entrada.nextDouble();
+
+            int peso1 = 2;
+            int peso2 = 3;
+            int peso3 = 5;
+
+            double somaPonderadas = (valor1 * peso1) + (valor2 * peso2) + (valor3 * peso3);
+            double mediaPonderadas = somaPonderadas / (peso1 + peso2 + peso3);
+            System.out.printf("%.1f\n", mediaPonderadas);
         }
     }
 }
